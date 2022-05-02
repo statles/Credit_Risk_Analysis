@@ -35,5 +35,14 @@ Conclusion: There was very high precision for Low Risk samples, and very low pre
 
 Conclusion: The Easy Ensemble classifier had the highest recall and the random undersampling had the lowest recall.
 
+![image](https://user-images.githubusercontent.com/95397823/166186175-7d18615a-d131-47d9-9904-fc38da01a731.png)
+
+Fig 1: The Classification Report for EasyEnsembleClassifier
+
+![image](https://user-images.githubusercontent.com/95397823/166186227-095bde0a-0e31-4dea-967e-d697c3becd13.png)
+
+Fig 2: The Classification Report for Random Undersampling using Cluster Centroids algorithm
+
+
 ## Summary: 
 Due to the extreme imbalanced in the two categories, this was a difficult dataset for the machine to train on. Many of the models behaved poorly, with balanced accuracy scores around 0.60. However, the EasyEnsembleClassifier seemed to work the best out of all the models. This model had the highest balanced accuracy score and the highest recall of all the models. However, due to all the models having a very low precision score for High Risk samples, I would not recommend any model. There are far too many low risk credit scores being flagged as high risk, which will be difficult for both the business and the customer to fix.
